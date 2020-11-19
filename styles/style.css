@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
 html,
 body {
   margin: 0;
   padding: 0;
+  font-family: "Quicksand", sans-serif;
 }
 
 .container {
@@ -29,8 +32,7 @@ body {
 
 input {
   font-size: 1.5rem;
-  background-color: #0f0e17;
-  color: #ffe07d;
+  border: 2px solid #414141;
   transition: 300ms;
   border-radius: 2rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 3px 10px 0 rgba(0, 0, 0, 0.4);
@@ -82,13 +84,16 @@ input:focus {
   color: #414141;
 }
 
+.list-item * {
+  font-weight: 300;
+}
+
 .list-item {
   margin: 1rem 10%;
   padding: 0 1rem;
   grid-column: 1fr;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 3px 10px 0 rgba(0, 0, 0, 0.4);
   font-size: 1.5rem;
-  border-radius: 3rem;
   display: flex;
   align-items: center;
 }

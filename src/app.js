@@ -15,6 +15,7 @@ let updateLocalStorage = () => {
 
 let updateUI = () => {
   let listDiv = document.getElementById("list-container");
+  // Remove all UI elements and Build again with updated datas
   listDiv.querySelectorAll("*").forEach((node) => {
     node.remove();
   });
