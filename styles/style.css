@@ -1,0 +1,113 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
+}
+
+.todo-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-inputbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+input {
+  font-size: 1.5rem;
+  background-color: #0f0e17;
+  color: #ffe07d;
+  transition: 300ms;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn-submit {
+  width: min-content;
+  padding: 0;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  transition: 300ms;
+}
+
+.btn-submit:focus {
+  outline: none;
+}
+
+.btn-submit:hover {
+  transform: rotate(180deg);
+}
+
+.btn-submit img {
+  width: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list {
+  width: 100%;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.done {
+  background-color: #7dff83;
+  color: #414141;
+}
+
+.list-item {
+  margin: 1rem 10%;
+  padding: 0 1rem;
+  grid-column: 1fr;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.list-item :first-child {
+  margin-right: auto;
+}
+
+.list-item button {
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+
+.list-item button:focus {
+  background-color: #ffe07d;
+  outline: none;
+}
+
+.list-item button img {
+  height: 3rem;
+}
