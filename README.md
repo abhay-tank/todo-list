@@ -10,4 +10,4 @@ On window load, localstorage is searched for existing todo list. If found it is 
 
 Upon operations on Todo List array, DOM and localstorages are also updated.
 
-Project is hosted using Github at
+Project is hosted using Github at https://abhay-tank.github.io/todo-list/
