@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Toodoo</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="shortcut icon" href="./images/logo.svg" type="image/svg" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="todo-banner">
-        <img class="logo" src="./images/logo-lg.svg" alt="" />
-        <form onsubmit="addItem(event)" class="todo-inputbox">
-          <input
-            type="text"
-            name="todo"
-            id="todo-input"
-            placeholder="Todo Item"
-            autofocus
-          />
-          <button class="btn-submit">
-            <img src="./images/add.svg" alt="add" />
-          </button>
-        </form>
-      </div>
-      <div id="list-container" class="todo-list"></div>
-    </div>
-    <script src="./src/app.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Toodoo</title>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="shortcut icon" href="./images/logo.svg" type="image/svg" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="todo-banner">
+				<img class="logo" src="./images/logo-lg.svg" alt="" />
+				<form onsubmit="addItem(event)" class="todo-inputbox">
+					<input
+						type="text"
+						name="todo"
+						id="todo-input"
+						placeholder="Todo Item"
+						autofocus
+					/>
+					<button class="btn-submit">
+						<img src="./images/add.svg" alt="add" />
+					</button>
+				</form>
+			</div>
+			<div id="list-container" class="todo-list"></div>
+		</div>
+		<script src="./src/app.js" type="module"></script>
+	</body>
 </html>
